@@ -1,0 +1,67 @@
+Sub choosePath()
+
+
+If Cells(1, 2).Value = "1" Then
+MsgBox ("answerOne")
+
+ElseIf Cells(1, 2).Value = "2" Then
+MsgBox ("You choose to enter the fiery volcano of doom!")
+
+ElseIf Cells(1, 2).Value = "3" Then
+MsgBox ("You choose to enter the terrifying jungle of doom!")
+
+ElseIf Cells(1, 2).Value = "4" Then
+MsgBox ("You choose to enter the terrifying city of doom!")
+
+Else 
+MsgBox ("try following directions")
+End If
+
+End Sub
+
+`Type 3
+
+If (range("B1").Value = 1) Then
+MsgBox ("You choose to enter the wooded forest of doom!")
+
+ElseIf (range("B1").Value = 2) Then
+MsgBox ("You choose to enter the fiery volcano of doom!")
+
+ElseIf (range("B1").Value = 3) Then
+MsgBox ("You choose to enter the terrifying jungle of doom!")
+
+ElseIf (range("B1").Value = 4) Then
+MsgBox ("You choose to enter the spooky city of doom!")
+
+ElseMsgBox 
+MsgBox ("try following directions")
+
+End sub
+
+
+
+`TYPE 2 (NOT IDEAL)
+
+Sub choosePath()
+
+If Cells(1, 2).Value = "1" Then
+MsgBox ("You choose to enter the wooded forest of doom!")
+End If
+
+If Cells(1, 2).Value = "2" Then
+MsgBox ("You choose to enter the fiery volcano of doom!")
+End If
+
+If Cells(1, 2).Value = "3" Then
+MsgBox ("You choose to enter the terrifying jungle of doom!")
+End If
+
+If Cells(1, 2).Value = "4" Then
+MsgBox ("You choose to enter the spooky city of doom!")
+End If
+
+If Cells(1, 2).Value <> "1" Or "2" Or "3" Or "4" Then
+MsgBox ("try following directions")
+End If
+
+End Sub
